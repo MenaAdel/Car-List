@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_car"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/brand_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/img_car"
+        app:layout_constraintTop_toTopOf="@+id/img_car" />
+
+    <TextView
+        android:id="@+id/isused_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/black"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/brand_textview"
+        app:layout_constraintTop_toBottomOf="@+id/brand_textview" />
+
+    <TextView
+        android:id="@+id/year_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@+id/isused_textView"
+        app:layout_constraintTop_toBottomOf="@+id/isused_textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
